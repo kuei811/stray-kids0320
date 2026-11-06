@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111111">
+<title>STRAY KIDS — DISCOGRAPHY ARCHIVE</title>
+<style>
+:root{--bg:#0c0c0e;--panel:#17171b;--panel2:#202026;--red:#e32935;--muted:#a7a7b0;--line:#303037;--white:#f6f5f2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,"Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1180px,92%);margin:auto}
+header{min-height:460px;display:flex;align-items:center;position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 78% 42%,#5d1018 0,transparent 34%),linear-gradient(120deg,#111 15%,#1a1013 58%,#090909)}
+header:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,transparent 0 32px,#ffffff08 33px 34px);pointer-events:none}
+nav{position:absolute;top:0;left:0;right:0;z-index:2;padding:22px 0;display:flex;justify-content:space-between;align-items:center}
+.brand{font-weight:900;letter-spacing:.18em;font-size:14px}.brand span{color:var(--red)}
+.navtag{font-size:11px;letter-spacing:.2em;color:#c8c8ce}
+.hero{position:relative;z-index:1;padding:105px 0 70px}.eyebrow{color:#ff6973;font-size:11px;letter-spacing:.34em;font-weight:800}
+h1{font-size:clamp(48px,9vw,112px);line-height:.92;letter-spacing:-.07em;margin:22px 0 18px;font-weight:950}
+h1 span{color:var(--red)}.hero p{color:#c3c1c5;max-width:560px;font-size:15px}
+.hero-meta{display:flex;gap:22px;margin-top:30px;color:#aaa;font-size:11px;letter-spacing:.12em}.hero-meta b{color:white}
+main{padding:48px 0 80px}.intro{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:24px}
+.kicker{font-size:10px;letter-spacing:.3em;color:var(--red);font-weight:800}.section-title{font-size:28px;margin:5px 0 0;letter-spacing:-.03em}
+.count{font-size:12px;color:var(--muted)}
+.controls{display:grid;grid-template-columns:1fr 180px 180px;gap:10px;margin:24px 0 28px}
+input,select{width:100%;background:#17171b;color:white;border:1px solid var(--line);border-radius:8px;padding:13px 14px;font-size:13px;outline:none}
+input:focus,select:focus{border-color:var(--red)}select option{background:#17171b}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:30px}.chip{border:1px solid var(--line);background:transparent;color:#bbb;border-radius:99px;padding:7px 13px;font-size:11px;cursor:pointer}.chip.active,.chip:hover{background:var(--red);border-color:var(--red);color:white}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.card{background:var(--panel);border:1px solid #29292f;border-radius:12px;overflow:hidden;transition:.22s;display:flex;flex-direction:column;min-width:0}
+.card:hover{transform:translateY(-4px);border-color:#743039;box-shadow:0 14px 35px #0008}
+.cover{height:185px;position:relative;overflow:hidden;padding:18px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(135deg,var(--c1),var(--c2))}
+.cover:before{content:"";position:absolute;width:230px;height:230px;border:1px solid #ffffff55;border-radius:50%;right:-65px;top:-90px;box-shadow:0 0 0 22px #ffffff0b,0 0 0 48px #ffffff0b}
+.cover:after{content:"";position:absolute;width:150px;height:150px;border:1px solid #ffffff55;transform:rotate(35deg);right:25px;bottom:-95px}
+.cover small,.cover strong,.cover em{position:relative;z-index:1}.cover small{font-size:9px;letter-spacing:.24em;font-weight:800;color:#ffffffc9}.cover strong{font-size:clamp(25px,3vw,38px);line-height:1;letter-spacing:-.06em;max-width:85%;overflow-wrap:anywhere;text-shadow:0 2px 14px #0005}.cover em{font-style:normal;font-size:9px;letter-spacing:.18em;color:#ffffffc9}
+.cardbody{padding:17px 17px 15px;display:flex;flex-direction:column;flex:1}
+.meta{display:flex;justify-content:space-between;gap:10px;color:#a6a6af;font-size:10px;letter-spacing:.08em}
+.type{color:#ff737c;border:1px solid #73323a;padding:3px 7px;border-radius:4px;white-space:nowrap}
+h3{font-size:18px;margin:10px 0 6px;letter-spacing:-.02em}.desc{font-size:12px;color:#b5b4bc;min-height:58px;margin:0 0 14px}
+.track{font-size:11px;color:#e8e7e9;border-top:1px solid var(--line);padding-top:11px;margin-top:auto}
+.track span{color:#999;margin-right:6px}
+.actions{display:flex;gap:8px;margin-top:14px}.mv{display:inline-flex;align-items:center;gap:8px;background:var(--red);color:white;border-radius:6px;padding:9px 12px;font-size:11px;font-weight:800;transition:.2s}.mv:hover{background:#ff4753}.mv svg{width:13px;height:13px;fill:currentColor}.detail{font-size:11px;color:#aaa;padding:8px 4px}
+.empty{grid-column:1/-1;padding:50px;text-align:center;color:#aaa;border:1px dashed var(--line);border-radius:12px}
+footer{border-top:1px solid var(--line);padding:30px 0 45px;color:#888;font-size:11px}.footrow{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.sources a{color:#ddd;text-decoration:underline;text-underline-offset:3px}
+.note{color:#777;margin-top:14px;max-width:850px}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}.controls{grid-template-columns:1fr 1fr}.controls input{grid-column:1/-1}}
+@media(max-width:560px){header{min-height:400px}.grid{grid-template-columns:1fr}.cover{height:205px}.controls{grid-template-columns:1fr}.controls input{grid-column:auto}.intro{align-items:start;flex-direction:column}.hero-meta{gap:12px;flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<header>
+ <nav class="wrap"><div class="brand">SKZ<span>_</span>ARCHIVE</div><div class="navtag">MUSIC · STORY · IDENTITY</div></nav>
+ <div class="hero wrap">
+  <div class="eyebrow">THE OFFICIAL DISCOGRAPHY FAN GUIDE</div>
+  <h1>STRAY<br><span>KIDS.</span></h1>
+  <p>從出道作品到最新專輯，循著音樂認識 Stray Kids。探索每張作品的概念、主打歌曲，並直接前往 YouTube 搜尋官方 MV。</p>
+  <div class="hero-meta"><span><b>2018 — 2026</b> RELEASE ARCHIVE</span><span><b>8</b> MEMBERS</span><span><b>STAY</b> FOREVER</span></div>
+ </div>
+</header>
+<main class="wrap">
+ <div class="intro"><div><div class="kicker">EXPLORE THE ALBUMS</div><h2 class="section-title">音樂作品資料庫</h2></div><div class="count" id="count">載入中</div></div>
+ <div class="controls">
+  <input id="search" type="search" placeholder="搜尋專輯、主打歌或關鍵字…">
+  <select id="year"><option value="">所有年份</option></select>
+  <select id="language"><option value="">所有語言</option><option value="韓語">韓語</option><option value="日語">日語</option><option value="多語／特別企劃">多語／特別企劃</option></select>
+ </div>
+ <div class="filters" id="filters">
+  <button class="chip active" data-type="">全部作品</button>
+  <button class="chip" data-type="正規專輯">正規專輯</button>
+  <button class="chip" data-type="迷你專輯">迷你專輯</button>
+  <button class="chip" data-type="特別／企劃專輯">特別／企劃</button>
+  <button class="chip" data-type="單曲專輯">單曲專輯</button>
+  <button class="chip" data-type="精選／合輯">精選／合輯</button>
+ </div>
+ <section class="grid" id="grid" aria-live="polite"></section>
+</main>
+<footer><div class="wrap">
+ <div class="footrow"><div><b style="color:#eee;letter-spacing:.15em">SKZ_ARCHIVE</b><div>Made for STAY · Fan-made information page</div></div>
+ <div class="sources">資料參考：<a href="https://straykids.jype.com/discography" target="_blank" rel="noopener">JYP 官方 Discography</a> · <a href="https://www.sonymusic.com.tw/artist/stray-kids/" target="_blank" rel="noopener">台灣索尼音樂</a></div></div>
+ <p class="note">本頁為非官方粉絲整理網站，專輯封面為網頁設計用的文字視覺封面，並非官方實體封面。作品分類以專輯／企劃作品為主，不逐一列入數位單曲、Remix、演唱會影像及 OST。YouTube 按鈕會以主打歌名稱搜尋影片，請優先選擇 Stray Kids 官方頻道上傳的 MV。資料更新至 2026 年 11 月 6 日；未發行作品不列入。</p>
+</div></footer>
+<script>
+const albums = [
+{y:2018,n:"Mixtape",type:"精選／合輯",lang:"韓語",track:"Hellevator",desc:"由生存節目《Stray Kids》延伸而來的出道前作品，收錄節目中展現的原創歌曲，呈現成員追尋夢想與突破自我的起點。",c:["#28364c","#111820"]},
+{y:2018,n:"I am NOT",type:"迷你專輯",lang:"韓語",track:"District 9",desc:"正式出道作品，以「我不是別人定義的模樣」為核心，透過強烈嘻哈與電子聲響，宣告 Stray Kids 的音樂態度。",c:["#44464b","#111"]},
+{y:2018,n:"I am WHO",type:"迷你專輯",lang:"韓語",track:"My Pace",desc:"延續自我探索的主題，鼓勵每個人走自己的步調，不必因為比較而感到焦慮。",c:["#c36c35","#321d20"]},
+{y:2018,n:"I am YOU",type:"迷你專輯",lang:"韓語",track:"I am YOU",desc:"以陪伴與連結為主軸，描寫在人際關係中找到理解自己的力量，音樂氛圍更添溫暖與感性。",c:["#6b8d8a","#1b3438"]},
+{y:2019,n:"Clé 1 : MIROH",type:"迷你專輯",lang:"韓語",track:"MIROH",desc:"象徵踏入未知城市、迎向挑戰的作品。節奏強烈、充滿野心，展現團體勇往直前的能量。",c:["#ba4a27","#25141a"]},
+{y:2019,n:"Clé 2 : Yellow Wood",type:"特別／企劃專輯",lang:"韓語",track:"Side Effects",desc:"以成長過程中的混亂、焦慮與選擇為概念，透過 Psytrance 電子音色打造鮮明且實驗性的聽感。",c:["#d5a52d","#44331b"]},
+{y:2019,n:"Clé : LEVANTER",type:"迷你專輯",lang:"韓語",track:"Levanter",desc:"描繪放下執著、重新找回自我的過程。主打歌以抒情搖滾呈現掙扎後的自由與希望。",c:["#8097a4","#293442"]},
+{y:2020,n:"GO生 (GO LIVE)",type:"正規專輯",lang:"韓語",track:"God's Menu",desc:"首張韓語正規專輯，以獨特的音樂配方比喻創作風格。〈God's Menu〉成為代表作之一，展現強烈節奏與鮮明個性。",c:["#9a2926","#251216"]},
+{y:2020,n:"IN生 (IN LIFE)",type:"正規專輯",lang:"韓語",track:"Back Door",desc:"《GO生》的改版專輯，加入新曲並延伸音樂概念。〈Back Door〉以充滿趣味的節奏邀請聽眾進入 Stray Kids 的世界。",c:["#a7a29a","#302a2a"]},
+{y:2020,n:"ALL IN",type:"迷你專輯",lang:"日語",track:"ALL IN",desc:"日本首張迷你專輯，傳達全力以赴、不留退路的決心，融合強烈嘻哈與舞曲能量。",c:["#c2a54b","#33251b"]},
+{y:2020,n:"SKZ2020",type:"精選／合輯",lang:"多語／特別企劃",track:"風 (Levanter) -Japanese ver.-",desc:"日本出道紀念精選專輯，以重新錄製的版本整理早期代表歌曲，讓聽眾回顧團體初期的音樂歷程。",c:["#596e7b","#18252d"]},
+{y:2021,n:"NOEASY",type:"正規專輯",lang:"韓語",track:"Thunderous",desc:"以「吵鬧」作為自信宣言，回應外界對團體音樂風格的評價。融合傳統韓國元素與現代嘻哈，氣勢十足。",c:["#6e252b","#171318"]},
+{y:2021,n:"Christmas EveL",type:"單曲專輯",lang:"韓語",track:"Christmas EveL",desc:"以調皮又反轉的方式詮釋聖誕節，呈現不同於典型溫馨聖誕歌曲的幽默與活力。",c:["#8b252b","#18352e"]},
+{y:2021,n:"SKZ2021",type:"精選／合輯",lang:"多語／特別企劃",track:"Scars",desc:"整理出道以來的多首歌曲，並收錄重新錄製版本，記錄團體音樂成長與成員聲音的變化。",c:["#59606d","#171b24"]},
+{y:2022,n:"ODDINARY",type:"迷你專輯",lang:"韓語",track:"MANIAC",desc:"由 Odd 與 Ordinary 組成的概念，鼓勵人們擁抱不平凡的自己。〈MANIAC〉以獨特節奏和強烈視覺概念受到矚目。",c:["#658b7b","#182c28"]},
+{y:2022,n:"CIRCUS",type:"迷你專輯",lang:"日語",track:"CIRCUS",desc:"日本迷你專輯，以馬戲團為主題打造充滿戲劇張力的音樂世界，展現俏皮、華麗又充滿能量的一面。",c:["#b88c54","#33202b"]},
+{y:2022,n:"MAXIDENT",type:"迷你專輯",lang:"韓語",track:"CASE 143",desc:"以突如其來的愛情事件為主題，〈CASE 143〉將愛情比喻成需要解碼的案件，展現活潑又俐落的音樂風格。",c:["#bd566b","#35212b"]},
+{y:2022,n:"SKZ-REPLAY",type:"精選／合輯",lang:"多語／特別企劃",track:"FAM (Korean Ver.)",desc:"收錄成員個人作品與團體歌曲，呈現成員各自的創作特色，也讓粉絲聽見不同於主打歌的音樂面貌。",c:["#6b617d","#25202f"]},
+{y:2023,n:"THE SOUND",type:"正規專輯",lang:"日語",track:"THE SOUND",desc:"日本首張正規專輯，以音樂本身作為核心，呈現團體對聲音、舞台與創作的熱情。",c:["#7e8c9b","#202832"]},
+{y:2023,n:"★★★★★ (5-STAR)",type:"正規專輯",lang:"韓語",track:"S-Class",desc:"第三張韓語正規專輯，以「獨一無二的五星級存在」為概念，展現多樣曲風與高度自信的團體特色。",c:["#a43b32","#1d1c24"]},
+{y:2023,n:"Social Path / Super Bowl",type:"迷你專輯",lang:"日語",track:"Social Path (feat. LiSA)",desc:"日本作品，與日本歌手 LiSA 合作的〈Social Path〉描寫追夢路上的孤獨與堅持，充滿搖滾能量。",c:["#4b5364","#171a24"]},
+{y:2023,n:"樂-STAR (ROCK-STAR)",type:"迷你專輯",lang:"韓語",track:"LALALALA",desc:"以搖滾精神為主題，透過〈LALALALA〉傳達即使身處混亂，也要盡情享受當下、勇敢發聲的態度。",c:["#b63b37","#21151c"]},
+{y:2024,n:"ATE",type:"迷你專輯",lang:"韓語",track:"Chk Chk Boom",desc:"以征服與自信為核心，融合嘻哈、拉丁節奏等元素，〈Chk Chk Boom〉展現俐落又充滿爆發力的風格。",c:["#d0a14c","#34231c"]},
+{y:2024,n:"GIANT",type:"正規專輯",lang:"日語",track:"GIANT",desc:"日本第二張正規專輯，以巨大、強悍的形象展現團體持續擴張的音樂版圖與舞台氣勢。",c:["#657d91","#1a2531"]},
+{y:2024,n:"合 (HOP)",type:"特別／企劃專輯",lang:"多語／特別企劃",track:"Walkin On Water",desc:"首張 SKZHOP HIPTAPE，以嘻哈為核心，融合多種音樂元素，呈現成員在節奏、饒舌與創作上的實驗。",c:["#9b8a74","#28211f"]},
+{y:2025,n:"Mixtape : dominATE",type:"特別／企劃專輯",lang:"韓語",track:"GIANT (Korean Ver.)",desc:"延伸世界巡演《dominATE》的企劃作品，串連舞台能量與團體音樂歷程，呈現更具現場感的面貌。",c:["#773b42","#17151c"]},
+{y:2025,n:"Hollow",type:"迷你專輯",lang:"日語",track:"Hollow",desc:"日本第三張迷你專輯，以內心空缺、孤獨與情感為主題，透過細膩旋律展現較為感性的音樂表現。",c:["#667b8a","#1d252d"]},
+{y:2025,n:"KARMA",type:"正規專輯",lang:"韓語",track:"CEREMONY",desc:"以命運、努力與成就為主題，描繪一路走來累積的力量。〈CEREMONY〉以強烈節奏呈現勝利般的舞台氣勢。",c:["#b18b4b","#30251b"]},
+{y:2025,n:"DO IT",type:"特別／企劃專輯",lang:"韓語",track:"Do It",desc:"以果斷行動與自我突破為核心，透過充滿推進感的節奏，傳達不再猶豫、勇敢向前的態度。",c:["#8b3934","#1e171b"]},
+{y:2026,n:"SKZ-REPLAY 2026 Pt.1",type:"精選／合輯",lang:"多語／特別企劃",track:"Battle Ground (Korean Ver.)",desc:"收錄成員透過 SKZ-RECORD、SKZ-PLAYER 等企劃公開的作品與個人歌曲，整理不同時期的創作成果。",c:["#6c647c","#211d2c"]},
+{y:2026,n:"THIS & THAT",type:"迷你專輯",lang:"韓語",track:"This & That",desc:"2026 年推出的作品，收錄多首不同風格歌曲，呈現 Stray Kids 持續變化的音樂樣貌；可從主打歌感受全新階段的能量。",c:["#a34a39","#251b23"]}
+];
+const grid=document.getElementById('grid'), search=document.getElementById('search'), year=document.getElementById('year'), language=document.getElementById('language'), count=document.getElementById('count');
+let activeType='';
+[...new Set(albums.map(a=>a.y))].sort((a,b)=>b-a).forEach(y=>{let o=document.createElement('option');o.value=y;o.textContent=y;year.appendChild(o)});
+function render(){
+ const q=search.value.trim().toLowerCase(), y=year.value, l=language.value;
+ const list=albums.filter(a=>(!q||[a.n,a.track,a.desc,a.type,a.lang].join(' ').toLowerCase().includes(q))&&(!y||String(a.y)===y)&&(!l||a.lang===l)&&(!activeType||a.type===activeType));
+ count.textContent=`顯示 ${list.length} / ${albums.length} 張作品`;
+ if(!list.length){grid.innerHTML='<div class="empty">找不到符合條件的作品，試試其他關鍵字或篩選條件。</div>';return}
+ grid.innerHTML=list.map((a,i)=>{
+ const yt='https://www.youtube.com/results?search_query='+encodeURIComponent('Stray Kids '+a.track+' official MV');
+ return `<article class="card"><div class="cover" style="--c1:${a.c[0]};--c2:${a.c[1]}"><small>STRAY KIDS · ${a.y}</small><strong>${a.n}</strong><em>SKZ ARCHIVE / ${String(a.y).slice(2)}</em></div><div class="cardbody"><div class="meta"><span>${a.y} · ${a.lang}</span><span class="type">${a.type}</span></div><h3>${a.n}</h3><p class="desc">${a.desc}</p><div class="track"><span>主打／代表曲</span>${a.track}</div><div class="actions"><a class="mv" href="${yt}" target="_blank" rel="noopener" aria-label="在 YouTube 搜尋 ${a.track} 官方 MV"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg>觀看 MV</a><a class="detail" href="https://straykids.jype.com/discography" target="_blank" rel="noopener">官方作品資訊 ↗</a></div></div></article>`;
+ }).join('');
+}
+search.addEventListener('input',render);year.addEventListener('change',render);language.addEventListener('change',render);
+document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));b.classList.add('active');activeType=b.dataset.type;render()}));
+render();
+</script>
+</body>
+</html>
